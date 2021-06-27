@@ -1,0 +1,147 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+a,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  line-height: 1; }
+
+button,
+input,
+textarea {
+  outline: none !important; }
+
+input[type=text]:focus,
+input[type=file]:focus,
+input[type=checkbox]:focus,
+input[type=radio]:focus,
+input:active {
+  outline: none !important; }
+
+/*css оформление скроллбара*/
+div.catalog-table-content::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 7px; }
+
+div.catalog-table-content::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+
+::-webkit-input-placeholder {
+  color: #222; }
+
+::-moz-placeholder {
+  color: #222; }
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #222; }
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #222; }
+
+.transit {
+  /* Safari */
+  transition: all 0.4s; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Rubic';
+  font-weight: 400;
+  height: 100%; }
+  body.openmodal {
+    overflow-y: hidden; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s; }
+  a:hover {
+    text-decoration: none !important; }
+  a:focus {
+    text-decoration: none !important; }
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  background-color: inherit; }
+
+.btn1 {
+  background: #FE12F4;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF; }
+  .btn1:hover {
+    background: #781CC5; }
+  .btn1:active {
+    background: #781CC5;
+    box-shadow: inset 0px 8px 36px rgba(0, 0, 0, 0.34); }
+  .btn1.btn1--disabled {
+    background: #747474;
+    pointer-events: none; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+i {
+  line-height: 100%; }
+
+.wrapper {
+  margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */

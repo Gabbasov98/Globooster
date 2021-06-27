@@ -1,0 +1,121 @@
+.main {
+    margin-top: 100px;
+    padding-top: 74px;
+    background-image: url(../images/starbg.png);
+    &__inner {
+        @include flex;
+        @include j-c;
+        gap: 50px;
+    }
+    &__right {
+        width: 580px;
+        // height: auto;
+        // background-image: url(../images/main-ball.gif);
+        & img {
+            width: 100%;
+        }
+    }
+    &__left {
+        // padding-bottom: 243px;
+        padding-top: 90px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 135%;
+        color: #FFFFFF;
+        & span {
+            color: #FE12F4;
+            white-space: nowrap;
+        }
+    }
+    &__desc {
+        font-size: 24px;
+        line-height: 135%;
+        margin-top: 15px;
+    }
+    &__btn {
+        margin-top: 32px;
+        width: 176px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main {
+        padding-top: 30px;
+        &__inner {
+            gap: 20px;
+        }
+        &__title {
+            font-size: 50px;
+        }
+        &__desc {
+            font-size: 19px;
+        }
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .main {
+        background: #000000;
+        margin-top: 0;
+        padding-top: 110px;
+        padding-bottom: 60px;
+        &__inner {
+            @include wrap;
+        }
+        &__right {
+            width: calc(100% - 30px);
+            margin-left: auto;
+            margin-right: auto;
+            order: -1;
+        }
+        &__left {
+            width: 100%;
+            padding-top: 0;
+            margin-top: -35px;
+        }
+        &__title {
+            width: 600px;
+            & br {
+                display: none;
+            }
+            & span {
+                white-space: unset;
+            }
+        }
+        &__desc {
+            width: 430px;
+            margin-top: 7px;
+            & br {
+                display: none;
+            }
+        }
+        &__btn {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding-top: 86px;
+        &__title {
+            font-size: 28px;
+            width: 318px;
+        }
+        &__desc {
+            width: 202px;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        &__btn {
+            width: 94px;
+            height: 28px;
+        }
+        &__left {
+            margin-top: -16px;
+        }
+    }
+}

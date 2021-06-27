@@ -1,0 +1,121 @@
+.footer {
+    padding-bottom: 50px;
+    padding-top: 160px;
+    background: #0D0226;
+    &__inner {
+        @include flex;
+        // @include j-c;
+        @include al-i(center);
+    }
+    &__logo {
+        width: 202px;
+        margin-right: 71px;
+        & img {
+            width: 100%;
+        }
+    }
+    &__nav {
+        &-list {
+            @include flex;
+            @include al-i(center);
+            column-gap: 40px;
+        }
+        &-item {
+            font-size: 16px;
+            position: relative;
+            &:hover {
+                color: #FE12F4;
+            }
+        }
+    }
+    &__btn {
+        margin-left: auto;
+        width: 209px;
+        height: 56px;
+        & span {
+            margin-left: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 30px;
+        &__logo {
+            width: 180px;
+        }
+        &__nav {
+            &-list {
+                column-gap: 20px;
+            }
+            &-item {
+                font-size: 14px;
+            }
+        }
+        &__btn {
+            font-size: 14px;
+            width: 180px;
+            height: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .footer {
+        &__inner {
+            position: relative;
+            justify-content: center;
+            gap: 50px;
+        }
+        &__logo {
+            margin-right: 0;
+            margin-top: -120px;
+        }
+        &__nav {
+            &-list {
+                display: block;
+            }
+            &-item {
+                margin-bottom: 16px;
+            }
+        }
+        &__btn {
+            position: absolute;
+            left: 41.5%;
+            top: 65%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background: #000;
+        margin-top: -7px;
+        &__inner {
+            width: 235px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__logo {
+            width: 102px;
+            margin-top: -100px;
+        }
+        &__btn {
+            width: 99px;
+            height: 39px;
+            font-size: 12px !important;
+            left: 1.5px;
+            top: 50%;
+            transform: translate(0);
+        }
+        &__nav {
+            &-item {
+                font-size: 12px;
+            }
+        }
+    }
+}
