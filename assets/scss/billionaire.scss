@@ -129,19 +129,22 @@
         &__items {
             margin-top: 100px;
             @include wrap;
-            gap: 20px;
+            gap: unset;
         }
         &__item {
             width: calc(50% - 10px);
+            margin-bottom: 20px;
         }
         &__bottom {
             @include wrap;
-            gap: 30px;
+            gap: unset;
+            margin-top: 85px;
             & img {
                 display: block;
                 margin: 0 auto;
             }
             & div {
+                margin-top: 30px;
                 width: 100%;
                 &::after {
                     height: 2px;
@@ -163,10 +166,10 @@
         }
         &__items {
             margin-top: 24px;
-            gap: 10px;
         }
         &__item {
             width: calc(50% - 6px);
+            margin-bottom: 12px;
             &-name {
                 right: unset;
                 font-size: 12px;
@@ -186,15 +189,14 @@
         }
         &__bottom {
             padding: 0;
-            margin-top: 30px;
-            gap: 15px;
+            margin-top: 15px;
             & img {
                 width: 100px;
                 flex-shrink: 0;
             }
             & div {
                 font-size: 10px;
-                margin-top: 0px;
+                margin-top: 15px;
                 padding-bottom: 15px;
                 &:after {
                     height: 1px;

@@ -113,9 +113,9 @@
 
 @media screen and (max-width: 1030px) {
     .organization {
-        padding-top: 55px;
+        padding-top: 25px;
         &__items {
-            gap: 30px;
+            gap: unset;
             &:before,
             &:after {
                 display: none;
@@ -124,6 +124,7 @@
         &__item {
             padding-left: 60px;
             width: 100%;
+            margin-bottom: 30px;
             &::after {
                 display: none;
             }
@@ -142,6 +143,7 @@
 
 @media screen and (max-width: 768px) {
     .organization {
+        padding-bottom: 20px;
         &__title {
             font-size: 18px;
         }
@@ -150,7 +152,6 @@
         }
         &__items {
             margin-top: 20px;
-            gap: 28px;
         }
         &__item {
             padding-left: 30px;

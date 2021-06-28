@@ -62,7 +62,7 @@
 @media screen and (max-width: 1030px) {
     .info {
         padding-top: 50px;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
         background: linear-gradient(90deg, #D398D1 1.01%, rgba(169, 36, 190, 0.62) 55.48%, rgba(72, 23, 112, 0.92) 92.74%);
         position: relative;
         &:after {
@@ -83,7 +83,7 @@
             height: unset;
             &-inner {
                 @include wrap;
-                gap: 20px;
+                gap: unset;
                 width: 360px;
             }
         }
@@ -94,6 +94,7 @@
             border-left: 1px solid #FFFFFF;
             padding-top: 2px;
             padding-bottom: 2px;
+            margin-bottom: 20px;
             &-img {
                 display: none;
             }
@@ -111,7 +112,7 @@
 @media screen and (max-width: 768px) {
     .info {
         padding-top: 25px;
-        padding-bottom: 30px;
+        padding-bottom: 5px;
         &::after {
             width: 130px;
             height: 217px;

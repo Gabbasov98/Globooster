@@ -36,7 +36,7 @@
             transform: translateX(-50%);
             top: -15px;
             border-radius: 50%;
-            background-image: url(../images/infinity.svg);
+            background-image: url(../images/infinity.png);
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -123,8 +123,9 @@
 
 @media screen and (max-width: 1030px) {
     .rightly {
+        padding-bottom: 65px;
         &__items {
-            column-gap: 26%;
+            gap: unset;
             margin-top: 33px;
             &:after {
                 border: none;
@@ -135,6 +136,7 @@
         &__item {
             width: 37%;
             @include wrap;
+            margin-bottom: 65px;
             &-left {
                 width: 100%;
             }
@@ -161,7 +163,7 @@
 @media screen and (max-width: 768px) {
     .rightly {
         padding-top: 32px;
-        padding-bottom: 25px;
+        padding-bottom: 0px;
         &__title {
             font-size: 18px;
         }
@@ -174,14 +176,13 @@
             height: 60px;
         }
         &__items {
-            row-gap: 25px;
-            column-gap: 20%;
             &::after {
                 width: 20%;
                 background-size: 100% auto;
             }
         }
         &__item {
+            margin-bottom: 25px;
             width: 40%;
             &-title {
                 font-size: 12px;

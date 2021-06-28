@@ -2470,21 +2470,27 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
 }
+.team__top img {
+  width: 401px;
+  opacity: 0.7;
+}
 .team__title {
   font-weight: bold;
   font-size: 48px;
   line-height: 135%;
   position: relative;
   z-index: 2;
+  color: #FE12F4;
 }
 .team__title:after {
   content: '';
   position: absolute;
-  z-index: 1;
-  width: 873px;
+  z-index: -1;
   height: 192px;
-  border: 1px dashed #FE12F4;
-  left: -445px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 73px 0px;
+  width: 639px;
+  right: -35px;
   top: -65px;
 }
 .team__title span {
@@ -2681,6 +2687,9 @@
   }
   .team__top img {
     display: none;
+  }
+  .team__title {
+    color: #fff;
   }
   .team__title::after {
     display: none;

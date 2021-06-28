@@ -160,8 +160,14 @@
     .creator {
         &__items {
             padding-bottom: 0;
+            gap: unset;
         }
         &__item {
+            margin-bottom: 80px;
+            &:nth-child(5),
+            &:nth-child(6) {
+                margin-bottom: 0;
+            }
             &:nth-child(odd) {
                 & .creator__item-title {
                     text-align: left;
@@ -211,11 +217,9 @@
         &__inner {
             margin-top: 27px;
         }
-        &__items {
-            gap: 40px 30px;
-        }
         &__item {
             width: calc(50% - 15px);
+            margin-bottom: 40px;
             &-title {
                 font-size: 12px;
             }
